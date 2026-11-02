@@ -39,7 +39,7 @@ def max_index(X):
     """
     i = 0
     j = 0
-    if( (type(X) != np.ndarray) or (X.ndim != 2) ) :
+    if( (type(X) is not np.ndarray) or (X.ndim != 2) ) :
         raise ValueError
     max = X[i,j]
     for i_iter in range(len(X)) : # parcours rows
